@@ -1,0 +1,20 @@
+{
+  "persons": [
+    {
+      "firstName": "Ivan",
+      "secondName": "Prodaiko",
+      "telephone": "0665062118",
+      "age": 24,
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "firstName": "name",
+      "secondName": "surName",
+      "telephone": "1234567890",
+      "age": 77,
+      "gender": "female",
+      "id": 2
+    }
+  ]
+}

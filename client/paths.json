@@ -1,0 +1,41 @@
+{
+  "client": "./app/",
+  "html": "./app/**/*.html",
+  "css": [
+    "./app/bower_components/bootstrap/dist/css/bootstrap.min.css",
+    "./app/bower_components/angular-material/angular-material.min.css",
+    "./app/bower_components/font-awesome/css/font-awesome.min.css",
+    "./app/*.css"
+  ],
+  "vendorcss": [
+    "./app/bower_components/bootstrap/dist/css/bootstrap.min.css",
+    "./app/bower_components/angular-material/angular-material.min.css",
+    "./app/bower_components/font-awesome/css/font-awesome.min.css"
+  ],
+  "js": [
+    "./app/bower_components/angular/angular.min.js",
+    "./app/bower_components/angular-route/angular-route.min.js",
+    "./app/bower_components/angular-messages/angular-messages.min.js",
+    "./app/bower_components/angular-aria/angular-aria.min.js",
+    "./app/bower_components/angular-animate/angular-animate.min.js",
+    "./app/bower_components/angular-material/angular-material.min.js",
+    "./app/*.js",
+    "./app/services/*.js",
+    "./app/templates/**/*.js",
+    "./app/directives/**/*.js"
+  ],
+  "vendorjs": [
+    "./app/bower_components/angular/angular.js",
+    "./app/bower_components/angular-route/angular-route.min.js",
+    "./app/bower_components/angular-messages/angular-messages.min.js",
+    "./app/bower_components/angular-aria/angular-aria.min.js",
+    "./app/bower_components/angular-animate/angular-animate.min.js",
+    "./app/bower_components/angular-material/angular-material.min.js"
+  ],
+  "scss": [
+    "./app/*.scss",
+    "./app/scss/*.scss",
+    "./app/templates/**/*.scss"
+  ],
+  "build": "./prod/"
+}

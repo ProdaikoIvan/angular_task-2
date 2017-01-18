@@ -1,0 +1,20 @@
+<header-app></header-app>
+<div class="col-sm-4">
+    <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline" ng-bind="vm.person.firstName"></span>
+                <span class="md-headline" ng-bind="vm.person.secondName"></span>
+                <span class="md-subhead"  ng-bind="vm.person.telephone"></span>
+                <span class="md-subhead"  ng-bind="'gender: ' + vm.person.gender"></span>
+                <span class="md-subhead"  ng-bind="'age: ' + vm.person.age"></span>
+            </md-card-title-text>
+            <md-card-title-media>
+                <div class="md-media-sm  card-media"></div>
+            </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button ng-click="vm.goBack()">back</md-button>
+        </md-card-actions>
+    </md-card>
+</div>

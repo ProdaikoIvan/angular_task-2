@@ -1,0 +1,23 @@
+/*header*/
+.md-toolbar-tools{
+    justify-content: space-between;
+}
+
+
+/*form*/
+.add-form {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #B8B8B8;
+    border-radius: 5px;
+}
+.radio-btn {
+    display: inline-block;
+}
+.submit-btn {
+    float: right;
+    margin: 0;
+}
+
+
+

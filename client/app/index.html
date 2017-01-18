@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
+    <title>Task_2</title>
+    <!--build:css css/vendor.css-->
+    <!--bower:css-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+    <!--endbower-->
+     <!--endbuild-->
+    <!--build:css css/main.css-->
+    <link rel="stylesheet" href="main.css">
+    <!--endbuild-->
+</head>
+<body ng-app="app">
+
+<div ng-view></div>
+<!--build:js script/vendor.js-->
+<!--libs-->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+<!--endbuild-->
+
+<!--build:js script/main.js-->
+<!--app-->
+<script src="app.js"></script>
+<script src="app.route.js"></script>
+
+<!--controllers-->
+<script src="templates/persons/person-list.controller.js"></script>
+<script src="templates/one-person/one-person.controller.js"></script>
+<!--services-->
+<script src="services/persons.js"></script>
+<script src="services/valid-form.js"></script>
+<!--directives-->
+<script src="directives/add-person/add-person.directive.js"></script>
+<script src="directives/header/header.directive.js"></script>
+<!--endbuild-->
+</body>
+</html>

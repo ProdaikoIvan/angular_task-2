@@ -1,0 +1,38 @@
+<div class="col-sm-4 block-view">
+    <form name="add.addForm" ng-submit="add.addPerson(add.addForm)" class="add-form" novalidate>
+       <div class="alert alert-warning alert-dismissible" role="alert" ng-show="vm.addSuccess">
+            <button ng-click="vm.addSuccess = !vm.addSuccess" type="button" class="close" data-dismiss="alert"
+                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Error!</strong> data is not saved.
+        </div>
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>First Name</label>
+            <input type="text" name="firstName" ng-model="add.person.firstName" ng-required="true" md-maxlength="15" md-no-asterisk md-autofoucs>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Second Name</label>
+            <input type="text" name="secondName" ng-model="add.person.secondName" ng-required="true" md-maxlength="15" md-no-asterisk>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Telephone</label>
+            <input type="tel" name="telephone" class="telInput" ng-focus="add.focusTel()" ng-blur="add.blurTel()"
+                   ng-change="add.changeTel()" ng-model="add.person.telephone">
+            <span class="error"></span>
+            <span class="md-errors-spacer">
+                <span>{{add.phoneTemplate }}</span>
+            </span>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Age</label>
+            <input type="number" name="age" ng-model="add.person.age" max="100" ng-required="true" md-no-asterisk>
+        </md-input-container>
+        <md-radio-group ng-model="add.person.gender" class="radio-btn">
+            <md-radio-button value="male" class="md-primary">Male</md-radio-button>
+            <md-radio-button value="female">Female</md-radio-button>
+        </md-radio-group>
+        <md-button type="submit" class="md-fab md-primary submit-btn" aria-label="Use Android">
+            <md-icon md-svg-src="content/img/icons/ic_done_black_24px.svg"></md-icon>
+        </md-button>
+    </form>
+</div>
+
